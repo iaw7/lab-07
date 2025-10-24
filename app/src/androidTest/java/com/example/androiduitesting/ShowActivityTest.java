@@ -55,6 +55,7 @@ public class ShowActivityTest {
         onView(withText("Edmonton")).perform(click());
 
         onView(withId(R.id.button_back)).perform(click());
-        onView(withText("Edmonton")).check(matchesisDisplayed()));
+        onView(withText("Edmonton")).check(matches(isDisplayed()));
     }
 }
+
